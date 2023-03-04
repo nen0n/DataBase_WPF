@@ -1,0 +1,78 @@
+﻿<Window x:Class="DataBase.Find"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataBase"
+        mc:Ignorable="d"
+        Title="Find" Icon ="find.ico" Height="273" Width="600" StateChanged="Window_StateChanged" SizeChanged="Window_SizeChanged">
+    <Grid>
+        <TextBlock x:Name="TextBlock" HorizontalAlignment="Left" Height="23" Margin="50,50,0,0" TextWrapping="Wrap" Text="Виберіть критерію пошуку" VerticalAlignment="Top" Width="300" TextAlignment="Center"/>
+        <ComboBox x:Name="Choise" HorizontalAlignment="Left" Height="23" Margin="50,100,0,0" VerticalAlignment="Top" Width="300" SelectionChanged="Choise_SelectionChanged">
+            <TextBlock>Виберіть критерію</TextBlock>
+            <TextBlock>Ім'я</TextBlock>
+            <TextBlock>Прізвище</TextBlock>
+            <TextBlock>По батькові</TextBlock>
+            <TextBlock>Факультет</TextBlock>
+            <TextBlock>Нагорода КПІ</TextBlock>
+            <TextBlock>№ нагороди КПІ</TextBlock>
+            <TextBlock>Рік нагороди КПІ</TextBlock>
+            <TextBlock>Нагорода МОН</TextBlock>
+            <TextBlock>Рік нагороди МОН</TextBlock>
+        </ComboBox>
+        <TextBox x:Name="Text" HorizontalAlignment="Left" Height="23" Margin="50,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" Visibility="Hidden"/>
+        <ComboBox x:Name="Faculity" HorizontalAlignment="Left" Height="23" Margin="50,150,0,0" VerticalAlignment="Top" Width="300" Visibility="Hidden">
+            <TextBlock>Виберіть факультет</TextBlock>
+            <TextBlock>ІАТ</TextBlock>
+            <TextBlock>ІАТЕ</TextBlock>
+            <TextBlock>ІЕЕ</TextBlock>
+            <TextBlock>ІМЗ</TextBlock>
+            <TextBlock>ІПСА</TextBlock>
+            <TextBlock>ІТС</TextBlock>
+            <TextBlock>ММІ</TextBlock>
+            <TextBlock>ФТІ</TextBlock>
+            <TextBlock>ІХФ</TextBlock>
+            <TextBlock>ПБФ</TextBlock>
+            <TextBlock>РТФ</TextBlock>
+            <TextBlock>ФБМІ</TextBlock>
+            <TextBlock>ФБТ</TextBlock>
+            <TextBlock>ФЕА</TextBlock>
+            <TextBlock>ФЕЛ</TextBlock>
+            <TextBlock>ФІОТ</TextBlock>
+            <TextBlock>ФЛ</TextBlock>
+            <TextBlock>ФММ</TextBlock>
+            <TextBlock>ФМФ</TextBlock>
+            <TextBlock>ФПМ</TextBlock>
+            <TextBlock>ФСП</TextBlock>
+            <TextBlock>ХТФ</TextBlock>
+            <TextBlock>ІСЗЗІ</TextBlock>
+        </ComboBox>
+        <ComboBox x:Name="MON" HorizontalAlignment="Left" Height="23" Margin="50,150,0,0" VerticalAlignment="Top" Width="300" Visibility="Hidden">
+            <TextBlock><Run Text="Немає нагороди МОН"/></TextBlock>
+            <TextBlock><Run Text="Подяка МОН України"/></TextBlock>
+            <TextBlock><Run Text="Грамота МОН України"/></TextBlock>
+            <TextBlock><Run Text="Почесна грамота МОН України"/></TextBlock>
+            <TextBlock><Run Text="нагрудний знак «Відмінник освіти»"/></TextBlock>
+            <TextBlock><Run Text="почесне звання «Заслужений діяч науки і техніки України»"/></TextBlock>
+            <TextBlock><Run Text="Подяка КМ України"/></TextBlock>
+            <TextBlock><Run Text="Грамота КМ України"/></TextBlock>
+        </ComboBox>
+        <ComboBox x:Name="KPI" HorizontalAlignment="Left" Height="23" Margin="50,150,0,0" VerticalAlignment="Top" Width="300" Visibility="Hidden">
+            <TextBlock><Run Text="Немає нагороди КПІ"/></TextBlock>
+            <TextBlock><Run Text="Грамота Вченої ради"/></TextBlock>
+            <TextBlock><Run Text="Почесна грамота Вченої ради"/></TextBlock>
+            <TextBlock><Run Text="Почесна відзнака Вченої ради"/></TextBlock>
+            <TextBlock><Run Text="почесне звання «Заслужений викладач КПІ»"/></TextBlock>
+            <TextBlock><Run Text="почесне звання «Заслужений професор КПІ»"/></TextBlock>
+            <TextBlock><Run Text="почесне звання «Заслужений науковець КПІ»"/></TextBlock>
+            <TextBlock><Run Text="почесне звання «Заслужений працівник КПІ»"/></TextBlock>
+            <TextBlock><Run Text="почесна відзнака «Видатний діяч КПІ»"/></TextBlock>
+            <TextBlock><Run Text="почесне звання «Почесний доктор КПІ»"/></TextBlock>
+            <TextBlock><Run Text="почесна відзнака «За служіння та відданість КПІ»"/></TextBlock>
+            <TextBlock><Run Text="почесна відзнака «За заслуги перед КПІ»"/></TextBlock>
+        </ComboBox>
+        <TextBlock x:Name="Render" HorizontalAlignment="Left" Height="70" Margin="350,173,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="240" MouseEnter="Render_MouseEnter"/>
+        <Button x:Name="Button" Content="Пошук" HorizontalAlignment="Left" Height="23" Margin="400,200,0,0" VerticalAlignment="Top" Width="150" IsEnabled="False" Click="Button_Click"/>
+
+    </Grid>
+</Window>

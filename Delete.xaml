@@ -1,0 +1,17 @@
+﻿<Window x:Class="DataBase.Delete"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataBase"
+        mc:Ignorable="d"
+        Title="Delete" Icon ="remove.ico" Height="300" Width="300" SizeChanged="Window_SizeChanged" StateChanged="Window_StateChanged">
+    <Grid>
+        <TextBlock x:Name="Render" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="0,135,0,0" Height="110" Width="300" MouseEnter="Render_MouseEnter"/>
+
+        <TextBlock x:Name="Text" HorizontalAlignment="Left" Height="92" Margin="10,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" TextAlignment="Center" FontSize="14"><Run Text="Введ"/><Run Text="іть індекс людини для видалення"/></TextBlock>
+        <TextBox x:Name="TextBlock" HorizontalAlignment="Left" Height="23" Margin="75,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <Button x:Name="Button" Content="ВИДАЛИТИ" HorizontalAlignment="Left" Height="77" Margin="50,150,0,0" VerticalAlignment="Top" Width="200" FontSize="15" FontWeight="Bold" IsEnabled="False" Click="Button_Click"/>
+
+    </Grid>
+</Window>
